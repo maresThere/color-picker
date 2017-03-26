@@ -3,6 +3,90 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 100px;
   font: 16px / 1 sans-serif;
+}
+
+.wrapper {
+  height: 800px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 5px solid rgb(100, 100, 100);
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #888;
+}
+
+h1 {
+  position: absolute;
+  margin-top: 30px;
+  line-height: 2em;
+}
+
+.swatchHolder {
+  display: flex;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top: 100px;
+  justify-content: center;
+  border: 5px solid rgb(50, 50, 50);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+.bgimage {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.swatch {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.hslaValues {
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+  height: 20px;
+  font-size: 20px;
+  padding: 20px;
+  line-height: 1.7em;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.Preview {
+  border: 1px solid black;
+  width: 310px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.sliderContainer > span {
+  margin: 5px;
+}
+
+.sliderContainer > input {
+  margin: 5px;
+}
+
+#hue {
+  background: linear-gradient(100deg, red, yellow, green, blue);
+}
+
+.sat {
+  background: linear-gradient();
 }
