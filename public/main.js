@@ -35,7 +35,7 @@ const main = () => {
   const updateColor = () => {
     let color = `hsla(${hueVal}, ${satVal}%, ${lightVal}%, ${alphaVal})`
     swatch.style.backgroundColor = color
-    sat.style.background = `linear-gradient:(100deg, hsl(${hueVal}, ${satVal}, 0%), blue)`
+    sat.style.background = `linear-gradient:(100deg, hsl(${hueVal}, ${satVal}%, 50%), blue)`
 
     alphaVal < 1 ? numberValues.textContent = `HSLA (${hueVal}, ${satVal}%, ${lightVal}%, ${alphaVal})` : numberValues.textContent = `HSL (${hueVal}, ${satVal}%, ${lightVal}%)`
   }
